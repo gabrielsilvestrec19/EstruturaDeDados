@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        File arquivo = new File("C:/texto.txt");
+        //Leitura do Arquivo
+        File arquivo = new File("texto.txt");
 
         try (Scanner sc = new Scanner(arquivo)) {
-            while (sc.hasNextLine()) {
-                System.out.println(sc.nextLine());
-            }
+                System.out.println(sc.nextLine());    
         } catch (FileNotFoundException e) {
             System.out.println("Erro" + e.getMessage());
         }
-
+        
     }
 }
