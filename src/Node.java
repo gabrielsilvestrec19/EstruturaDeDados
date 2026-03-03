@@ -3,5 +3,8 @@ public class Node {
         String hashNode;
         int altura = 1;
         Node esq, dir;
-        Node(String palavra) { this.palavra = palavra; }
+
+        public Node(String palavra) {
+            this.palavra = palavra;
+        }
     }
